@@ -1,0 +1,46 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.flx-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flx-row-na{
+    display: flex;
+    flex-direction: row;
+}
+
+.flx-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flx-aic{
+    align-items: center;
+}
+
+.flx-jce{
+    justify-content: flex-end;
+}
+
+.flx-jcc{
+    justify-content: center;
+}
+
+.flx-jcsb{
+    justify-content: space-between;
+}
+
+.flx-jcsa{
+    justify-content: space-around;
+}
+
+.flx-wrap{
+    flex-wrap: wrap;
+}
