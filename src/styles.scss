@@ -1,9 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 @import '../node_modules/reset-css/sass/_reset.scss';
 @import '../node_modules/bootstrap/dist/css/bootstrap.css';
-@import './partials/_variables.scss';
-@import './partials/_form.scss';
-@import './partials/_icons.scss';
-@import './partials/_layout.scss';
-@import './partials/_globals.scss';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import './partials/variables.scss';
+@import './partials/form.scss';
+@import './partials/icons.scss';
+@import './partials/layout.scss';
+@import './partials/globals.scss';
+// @font-face {
+//     font-family: 'Nexa-light';
+//     src: url('/assets/fonts/Nexa-Light.otf') format('opentype');
+//     src: url('/assets/fonts/Nexa-Light.ttf') format('truetype');
+//     src: url('/assets/fonts/Nexa-Light.eot');
+//     src: url('/assets/fonts/Nexa-Light.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+//     line-height: 1.5;
+// }
+// @font-face {
+//     font-family: 'Nexa-bold';
+//     src: url('/assets/fonts/Nexa-Bold.otf') format('opentype');
+//     src: url('/assets/fonts/Nexa-Bold.ttf') format('truetype');
+//     src: url('/assets/fonts/Nexa-Bold.eot');
+//     src: url('/assets/fonts/Nexa-Bold.woff') format('woff');
+//     font-weight: bold;
+//     font-style: normal;
+//     line-height: 1.5;
+// }

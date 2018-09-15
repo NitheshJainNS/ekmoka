@@ -1,46 +1,170 @@
-html, body{
+html,
+body {
     width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
-.flx-row{
+.flx-row {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.flx-row-na{
+.flx-row-na {
     display: flex;
     flex-direction: row;
 }
 
-.flx-column{
+.flx-column {
     display: flex;
     flex-direction: column;
 }
 
-.flx-aic{
+.flx-aic {
     align-items: center;
 }
 
-.flx-jce{
+.flx-ais {
+    align-items: flex-start;
+}
+
+.flx-jce {
     justify-content: flex-end;
 }
 
-.flx-jcc{
+.flx-jcc {
     justify-content: center;
 }
 
-.flx-jcsb{
+.flx-jcsb {
     justify-content: space-between;
 }
 
-.flx-jcsa{
+.flx-jcsa {
     justify-content: space-around;
 }
 
-.flx-wrap{
+.flx-wrap {
     flex-wrap: wrap;
+}
+
+.flx-two-block {
+    width: 50%;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.robot-font {
+    font-family: 'Roboto', sans-serif;
+}
+
+.raleway-font {
+    font-family: 'Raleway', sans-serif;
+}
+
+.fcw {
+    color: $white;
+}
+
+.fcb {
+    color: $black;
+}
+
+.fcg {
+    color: $gray;
+}
+
+.fwb {
+    font-weight: bold;
+}
+
+.Lh1 {
+    line-height: 1.3;
+}
+
+.f28 {
+    font-size: 28px;
+}
+
+.f32 {
+    font-size: 32px;
+}
+
+.f18 {
+    font-size: 18px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.f12 {
+    font-size: 12px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.form-disable {
+    pointer-events: none;
+    opacity: 0.9;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.disable {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.btn-fb {
+    background-color: $fb-bg;
+    color: $white;
+    border-radius: 20px;
+    width: 120px;
+    letter-spacing: 1px;
+    padding: 8px 2px;
+}
+
+.btn-gplus {
+    background-color: $gplus-bg;
+    color: $white;
+    border-radius: 20px;
+    width: 120px;
+    letter-spacing: 1px;
+    padding: 8px 2px;
+}
+
+.mrg-b10 {
+    margin-bottom: 10px;
+}
+
+.mrg-tb20 {
+    margin: 20px 0;
+}
+
+.hyper-link {
+    text-decoration: none;
+    color: $link-color;
 }

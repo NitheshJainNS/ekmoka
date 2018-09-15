@@ -1,12 +1,34 @@
-<div class="container-wrap">
-  <div class="flx-row">
-    <div class="left-block">
-    
+<div class="flx-container blue-bg">
+    <div class="flx-wrapper">
+        <div class="ekm-wrap">
+            <div class="flx-row flx-ais height-100">
+                <div class="flx-two-block height-100">
+                    <div class="women-bannar-wrap height-100">
+                        <span class="banner-title f28 robot-font fcw Lh1">Get your first break<br/> in the industry !</span>
+                    </div>
+                </div>
+                <div class="flx-two-block reg-content">
+                    <div class="title f32 raleway-font fcb fwb">Register with us!</div>
+                    <div class="sub-title f18 raleway-font fcg">To know more about the film industry and people working on it</div>
+                    <div class="social-title f14 raleway-font fcg">Register using</div>
+                    <button type="button" class="social-btn btn btn-fb raleway-font f12 fwb"><i class="fas fa-address-card"></i> Facebook</button>
+                    <button type="button" class="social-btn btn btn-gplus raleway-font f12 fwb"><i class="fab fa-google"></i> Google</button>
+                    <form #registrationForm="ngForm" class="custom-form register-form" (ngSubmit)="onRegister(registrationForm.valid)">
+                        <mat-form-field class="custom-input mrg-b10">
+                            <input matInput placeholder="Email">
+                        </mat-form-field>
+                        <mat-form-field class="custom-input mrg-b10">
+                            <input matInput placeholder="Mobile number">
+                        </mat-form-field>
+                        <mat-form-field class="custom-input mrg-b10">
+                            <input matInput placeholder="Create password">
+                        </mat-form-field>
+                        <div class="policy f12 text-center raleway-font fcg">By clicking Register, you agree to<br/> put terms, data policy and cookie policy </div>
+                        <button class="gradient-btn pointer raleway-font uppercase f18 mrg-tb20">register</button>
+                        <div class="social-title f14 raleway-font fcg text-center">Already have account ? <span class="pointer hyper-link fwb">Login</span></div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="right-block">
-      <form>
-        <input/>
-      </form>
-    </div>
-  </div>
 </div>
