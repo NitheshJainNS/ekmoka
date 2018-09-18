@@ -10,7 +10,7 @@
                 <div class="flx-two-block login-content">
                     <div class="title f32 raleway-font fcb fwb">Hurry !! Choose a <br/> new password</div>
                     <div class="social-title f14 raleway-font fcg">OTP has sent to registered mobile, Password must include at least<br/> 8 characters including 1 number or 1 special character</div>
-                    <form #loginForm="ngForm" class="custom-form login-form" (ngSubmit)="onLogin(loginForm.valid)">
+                    <form #loginForm="ngForm" class="custom-form login-form" (ngSubmit)="onSubmit(loginForm.valid)">
                         <mat-form-field class="custom-input mrg-b10">
                             <input matInput placeholder="New password">
                         </mat-form-field>

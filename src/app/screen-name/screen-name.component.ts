@@ -15,11 +15,15 @@ export class ScreenNameComponent implements OnInit {
 
   fileChange(event) {
     let fileList: FileList = event.target.files;
-    if(fileList.length > 0) {
-        let file: File = fileList[0];
-        let formData:FormData = new FormData();
-        formData.append('uploadFile', file, file.name);
+    if (fileList.length > 0) {
+      let file: File = fileList[0];
+      let formData: FormData = new FormData();
+      formData.append('uploadFile', file, file.name);
     }
-}
+  }
+
+  onSubmit(flag) {
+
+  }
 
 }

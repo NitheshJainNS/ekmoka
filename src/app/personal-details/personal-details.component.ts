@@ -12,7 +12,7 @@ export class PersonalDetailsComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit(){
+  onSubmit(flag){
     
   }
 

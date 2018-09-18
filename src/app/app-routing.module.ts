@@ -1,5 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 import { ForgotComponent } from './forgot/forgot.component';
 import { LoginComponent } from './login/login.component';
@@ -12,8 +13,27 @@ import { PersonalDetailsComponent } from './personal-details/personal-details.co
 import { MobileVerifyComponent } from './mobile-verify/mobile-verify.component';
 import { ScreenNameComponent } from './screen-name/screen-name.component';
 import { IntrestComponent } from './intrest/intrest.component';
+import { AppComponent } from './app.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const appRouter: Routes = [
+  // {
+  //   path: 'app',
+  //   component:AppComponent,
+  //   children:[{
+  //     path:'greet',
+  //     component:GreetComponent
+  //   }]
+  // }
+  // {
+  //   path:'',
+  //   redirectTo:'app',
+  //   pathMatch:'full'
+  // },
+  // {
+  //   path:'**',
+  //   component: PageNotFoundComponent
+  // },
   {
     path: '',
     redirectTo: '/login',
@@ -66,12 +86,15 @@ const appRouter: Routes = [
 ];
 
 @NgModule({
-    imports: [ RouterModule.forRoot(appRouter) ],
-    exports: [ RouterModule ],
-    providers: [
-    ],
+  imports: [
+    CommonModule,
+    RouterModule.forRoot(appRouter)],
+  exports: [
+    RouterModule
+  ],
+  providers: [
+  ],
+  declarations: [
+  PageNotFoundComponent]
 })
-
-export class AppRouteModule {
-
-}
+export class AppRoutingModule { }

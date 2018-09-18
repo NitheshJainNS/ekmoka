@@ -1,0 +1,18 @@
+.picture-wrap{
+    width: 50%;
+    margin: 5% 0 0 16%;
+    img{
+        max-width: 100%;
+    }
+}
+.content-wrap{
+    .title{
+        margin: 40px 0;
+        font-size: 32px;
+    }
+    .sub-title{
+        margin: 20px 0;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}

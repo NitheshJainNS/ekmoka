@@ -12,4 +12,7 @@ export class NewpwdComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSubmit(flag){
+    
+  }
 }

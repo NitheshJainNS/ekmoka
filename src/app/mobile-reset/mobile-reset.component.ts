@@ -12,4 +12,8 @@ export class MobileResetComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSubmit(flag){
+    
+  }
+
 }

@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { AuthService } from './auth.service';
 import { ForgotComponent } from './forgot/forgot.component';
-import { AppRouteModule } from './app.route.module';
+// import { AppRouteModule } from './app.route.module';
 import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 import { ResetComponent } from './reset/reset.component';
@@ -21,6 +21,7 @@ import { PersonalDetailsComponent } from './personal-details/personal-details.co
 import { MobileVerifyComponent } from './mobile-verify/mobile-verify.component';
 import { ScreenNameComponent } from './screen-name/screen-name.component';
 import { IntrestComponent } from './intrest/intrest.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -40,11 +41,12 @@ import { IntrestComponent } from './intrest/intrest.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRouteModule,
+    // AppRouteModule,
     FormsModule,
     MatInputModule,
     MatRadioModule,
-    MatIconModule
+    MatIconModule,
+    AppRoutingModule
   ],
   providers: [
     AuthService

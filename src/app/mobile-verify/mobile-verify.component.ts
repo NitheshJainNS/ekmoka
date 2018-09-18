@@ -11,5 +11,7 @@ export class MobileVerifyComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  onSubmit(flag){
+    
+  }
 }

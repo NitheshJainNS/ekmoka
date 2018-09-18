@@ -9,7 +9,7 @@
                 </div>
                 <div class="flx-two-block login-content">
                     <div class="social-title f14 raleway-font fcg">OTP has sent to registered Mobile</div>
-                    <form #loginForm="ngForm" class="custom-form login-form" (ngSubmit)="onLogin(loginForm.valid)">
+                    <form #loginForm="ngForm" class="custom-form login-form" (ngSubmit)="onSubmit(loginForm.valid)">
                         <mat-form-field class="custom-input mrg-b10">
                             <input matInput placeholder="Enter OTP">
                         </mat-form-field>
