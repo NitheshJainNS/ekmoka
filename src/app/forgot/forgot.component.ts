@@ -12,4 +12,8 @@ export class ForgotComponent implements OnInit {
   ngOnInit() {
   }
 
+  onForgot(flag){
+    
+  }
+
 }

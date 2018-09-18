@@ -1,0 +1,48 @@
+@import '../../partials/variables';
+
+.content-wrap{
+    position: relative;
+    .footer-wrap{
+        position: absolute;
+        width: 100%;
+        bottom: 50px;
+        left: 0;
+    }
+}
+.nav-wrap{
+    z-index: 10;
+}
+
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .btn {
+    color: $link-color;
+    padding: 8px 20px;
+    font-size: 16px;
+    background: none;
+  }
+  
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  .image-wrap{
+      background:#ddd;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      text-align: center;
+  }
+
+  .profile-icon{
+      margin: 40% 0 0;
+  }

@@ -15,7 +15,7 @@
         padding-bottom: 8%;
     }
     .sub-title {
-        padding-bottom: 8%;
+        padding-bottom: 2%;
     }
     .social-title {
         padding-bottom: 3%;
@@ -31,9 +31,15 @@
     .login-btn{
         margin: 45px 0 20px;
     }
+    .back-link{
+        margin-top: 10%;
+    }
 }
 
 .login-form {
-    margin: 10% 0 0;
+    margin: 2% 0 0;
     width: 70%;
+    .custom-radio{
+        margin: 8px 0;
+    }
 }

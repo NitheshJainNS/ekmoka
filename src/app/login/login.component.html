@@ -3,29 +3,30 @@
         <div class="ekm-wrap">
             <div class="flx-row flx-ais height-100">
                 <div class="flx-two-block height-100">
-                    <div class="women-bannar-wrap height-100">
-                        <span class="banner-title f28 robot-font fcw Lh1">Get your first break<br/> in the industry !</span>
+                    <div class="men-bannar-wrap height-100">
+                        <span class="banner-title f28 robot-font fcw Lh1 fwb">Showcase your<br/> talent and be the<br/> next super star</span>
                     </div>
                 </div>
-                <div class="flx-two-block reg-content">
-                    <div class="title f32 raleway-font fcb fwb">Register with us!</div>
-                    <div class="sub-title f18 raleway-font fcg">To know more about the film industry and people working on it</div>
-                    <div class="social-title f14 raleway-font fcg">Register using</div>
-                    <button type="button" class="social-btn btn btn-fb raleway-font f12 fwb"><i class="fas fa-address-card"></i> Facebook</button>
-                    <button type="button" class="social-btn btn btn-gplus raleway-font f12 fwb"><i class="fab fa-google"></i> Google</button>
-                    <form #registrationForm="ngForm" class="custom-form register-form" (ngSubmit)="onRegister(registrationForm.valid)">
+                <div class="flx-two-block login-content">
+                    <div class="title f32 raleway-font fcb fwb">Login</div>
+                    <div class="social-title f18 raleway-font fcg">Login using</div>
+                    <button type="button" class="social-btn btn btn-fb raleway-font f12 fwb"><i class="fab fa-facebook-f"></i> Facebook</button>
+                    <button type="button" class="social-btn btn btn-gplus raleway-font f12 fwb"><i class="fab fa-google-plus-g"></i> Google</button>
+                    <form #loginForm="ngForm" class="custom-form login-form" (ngSubmit)="onLogin(loginForm.valid)">
+                    <!-- <div style="border:1px solid #ccc;border-radius:25px;padding: 2px 15px;"> -->
                         <mat-form-field class="custom-input mrg-b10">
-                            <input matInput placeholder="Email">
+                            <mat-label>Email / Mobile number</mat-label>
+                            <input matInput required autocomplete="off">
                         </mat-form-field>
+                    <!-- </div> -->
                         <mat-form-field class="custom-input mrg-b10">
-                            <input matInput placeholder="Mobile number">
+                            <mat-label>Password</mat-label>
+                            <input matInput [type]="hide ? 'password' : 'text'">
+                            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
                         </mat-form-field>
-                        <mat-form-field class="custom-input mrg-b10">
-                            <input matInput placeholder="Create password">
-                        </mat-form-field>
-                        <div class="policy f12 text-center raleway-font fcg">By clicking Register, you agree to<br/> put terms, data policy and cookie policy </div>
-                        <button class="gradient-btn pointer raleway-font uppercase f18 mrg-tb20">register</button>
-                        <div class="social-title f14 raleway-font fcg text-center">Already have account ? <span class="pointer hyper-link fwb">Login</span></div>
+                        <div class="f14 pointer hyper-link raleway-font fcg fwb text-right">Forgot password?</div>
+                        <button class="gradient-btn pointer raleway-font uppercase f18 login-btn">Login</button>
+                        <div class="social-title f14 raleway-font fcg text-center">New user ? <span class="pointer hyper-link fwb">Create account</span></div>
                     </form>
                 </div>
             </div>

@@ -1,0 +1,51 @@
+<div class="flx-container dual-bg">
+    <div class="flx-row details-wrap">
+        <div class="content-wrap">
+            <div class="title f32 raleway-font fcb fwb mrg-b10">Mobile Verification</div>
+            <div class="sub-title f14 raleway-font fcg">OTP as sent to registred Mobile</div>
+            <form #personalinfoForm="ngForm" class="custom-form details-form mrg-tb20" (ngSubmit)="onSubmit(personalinfoForm.valid)">
+                <div class="flx-row mrg-tb20">
+                    <div class="two-colum">
+                        <mat-form-field class="custom-input mrg-b10">
+                            <input matInput placeholder="Enter OTP">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div>
+                    <button class="gradient-btn pointer raleway-font uppercase f18 custom-btn">Submit</button>
+                    <div class="back-link f14 raleway-font fcg mrg-tb20">Don't get OTP? <span class="pointer hyper-link fwb">Resend</span></div>
+                </div>
+            </form>
+            <div class="custom-form  details-form footer-wrap text-center">
+                <button class="default-btn pointer raleway-font uppercase f18 custom-btn"> < Back</button>
+                <button class="gradient-btn pointer raleway-font uppercase f18 custom-btn">Next > </button>
+            </div>
+        </div>
+        <div class="nav-wrap flx-column raleway-font">
+            <div class="nav-block flx-aic flx-jcc">
+                <div class="flx-row nav-content">
+                    <div class="nav-ellipse robot-font fwb f20 inactive">1</div>
+                    <div class="nav-text f16">Personal information</div>
+                </div>
+            </div>
+            <div class="nav-block flx-aic flx-jcc">
+                <div class="flx-row nav-content">
+                    <div class="nav-ellipse robot-font fwb f20 active">2</div>
+                    <div class="nav-text f16">Mobile Verification</div>
+                </div>
+            </div>
+            <div class="nav-block flx-aic flx-jcc">
+                <div class="flx-row nav-content">
+                    <div class="nav-ellipse robot-font fwb f20 inactive">3</div>
+                    <div class="nav-text f16">Set your screen Name</div>
+                </div>
+            </div>
+            <div class="nav-block flx-aic flx-jcc">
+                <div class="flx-row nav-content">
+                    <div class="nav-ellipse robot-font fwb f20 inactive">4</div>
+                    <div class="nav-text f16">Intrest of Feed</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

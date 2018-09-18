@@ -1,0 +1,72 @@
+<div class="flx-container dual-bg">
+    <div class="flx-row details-wrap">
+        <div class="content-wrap">
+            <div class="title f32 raleway-font fcb fwb mrg-b10">Personal details</div>
+            <div class="sub-title f14 raleway-font fcg">Help us know you better</div>
+            <form #personalinfoForm="ngForm" class="custom-form details-form" (ngSubmit)="onSubmit(personalinfoForm.valid)">
+                <div class="flx-row mrg-tb30">
+                    <div class="two-colum">
+                        <mat-form-field class="custom-input mrg-b10">
+                            <input matInput placeholder="First Name">
+                        </mat-form-field>
+                    </div>
+                    <div class="two-colum">
+                        <mat-form-field class="custom-input mrg-b10">
+                            <input matInput placeholder="Last Name">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="flx-row mrg-tb30">
+                    <div>
+                        <mat-radio-group>
+                            <mat-radio-button class="custom-radio marg-r20" value="male" checked="true">Male</mat-radio-button>
+                            <mat-radio-button class="custom-radio marg-r20" value="female">Female</mat-radio-button>
+                            <mat-radio-button class="custom-radio marg-r20" value="transgender">Transgender</mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+                </div>
+                <div class="flx-row mrg-tb30">
+                    <div class="two-colum">
+                        <mat-form-field class="custom-input mrg-b10">
+                            <input matInput placeholder="Date of birth">
+                        </mat-form-field>
+                    </div>
+                    <div class="two-colum">
+                        <mat-form-field class="custom-input mrg-b10">
+                            <input matInput placeholder="Mobile Number">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="text-right mrg-tb30">
+                    <button class="gradient-btn pointer raleway-font uppercase f18 custom-btn">Next > </button>
+                </div>
+            </form>
+        </div>
+        <div class="nav-wrap flx-column raleway-font">
+            <div class="nav-block flx-aic flx-jcc">
+                <div class="flx-row nav-content">
+                    <div class="nav-ellipse robot-font fwb f20 active">1</div>
+                    <div class="nav-text f16">Personal information</div>
+                </div>
+            </div>
+            <div class="nav-block flx-aic flx-jcc">
+                <div class="flx-row nav-content">
+                    <div class="nav-ellipse robot-font fwb f20 inactive">2</div>
+                    <div class="nav-text f16">Mobile Verification</div>
+                </div>
+            </div>
+            <div class="nav-block flx-aic flx-jcc">
+                <div class="flx-row nav-content">
+                    <div class="nav-ellipse robot-font fwb f20 inactive">3</div>
+                    <div class="nav-text f16">Set your screen Name</div>
+                </div>
+            </div>
+            <div class="nav-block flx-aic flx-jcc">
+                <div class="flx-row nav-content">
+                    <div class="nav-ellipse robot-font fwb f20 inactive">4</div>
+                    <div class="nav-text f16">Intrest of Feed</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

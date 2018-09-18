@@ -1,0 +1,59 @@
+<div class="flx-container dual-bg">
+    <div class="flx-row details-wrap">
+        <div class="content-wrap">
+            <div class="title f32 raleway-font fcb fwb mrg-b10">Set your Unique Screen Name</div>
+            <div class="sub-title f14 raleway-font fcg">Help us know you better</div>
+            <div class="mrg-tb20 flx-row">
+                <div class="image-wrap">
+                    <img src="../../assets/profile_photo.png" class="profile-icon"/>
+                </div>
+                <!-- <input type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx"> -->
+                <div class="upload-btn-wrapper pointer">
+                    <button class="btn">Upload profile image</button>
+                    <input type="file" name="myfile" class="pointer"/>
+                </div>
+            </div>
+            <form #personalinfoForm="ngForm" class="custom-form details-form mrg-tb20" (ngSubmit)="onSubmit(personalinfoForm.valid)">
+                <div class="flx-row">
+                    <div class="two-colum">
+                        <mat-form-field class="custom-input mrg-b10">
+                            <input matInput placeholder="Screen Name">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="sub-title f14 raleway-font fcg">Screen name should not contain only Firstname & Lastname</div>
+            </form>
+            <div class="custom-form  details-form footer-wrap text-center">
+                <button class="default-btn pointer raleway-font uppercase f18 custom-btn">
+                    < Back</button> <button class="gradient-btn pointer raleway-font uppercase f18 custom-btn">Next >
+                </button>
+            </div>
+        </div>
+        <div class="nav-wrap flx-column raleway-font">
+            <div class="nav-block flx-aic flx-jcc">
+                <div class="flx-row nav-content">
+                    <div class="nav-ellipse robot-font fwb f20 inactive">1</div>
+                    <div class="nav-text f16">Personal information</div>
+                </div>
+            </div>
+            <div class="nav-block flx-aic flx-jcc">
+                <div class="flx-row nav-content">
+                    <div class="nav-ellipse robot-font fwb f20 inactive">2</div>
+                    <div class="nav-text f16">Mobile Verification</div>
+                </div>
+            </div>
+            <div class="nav-block flx-aic flx-jcc">
+                <div class="flx-row nav-content">
+                    <div class="nav-ellipse robot-font fwb f20 active">3</div>
+                    <div class="nav-text f16">Set your screen Name</div>
+                </div>
+            </div>
+            <div class="nav-block flx-aic flx-jcc">
+                <div class="flx-row nav-content">
+                    <div class="nav-ellipse robot-font fwb f20 inactive">4</div>
+                    <div class="nav-text f16">Intrest of Feed</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

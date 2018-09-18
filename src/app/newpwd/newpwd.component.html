@@ -1,0 +1,27 @@
+<div class="flx-container blue-bg">
+    <div class="flx-wrapper">
+        <div class="ekm-wrap">
+            <div class="flx-row flx-ais height-100">
+                <div class="flx-two-block height-100">
+                    <div class="men-bannar-wrap height-100">
+                        <span class="banner-title f28 robot-font fcw Lh1 fwb">Showcase your<br/> talent and be the<br/> next super star</span>
+                    </div>
+                </div>
+                <div class="flx-two-block login-content">
+                    <div class="title f32 raleway-font fcb fwb">Hurry !! Choose a <br/> new password</div>
+                    <div class="social-title f14 raleway-font fcg">OTP has sent to registered mobile, Password must include at least<br/> 8 characters including 1 number or 1 special character</div>
+                    <form #loginForm="ngForm" class="custom-form login-form" (ngSubmit)="onLogin(loginForm.valid)">
+                        <mat-form-field class="custom-input mrg-b10">
+                            <input matInput placeholder="New password">
+                        </mat-form-field>
+                        <mat-form-field class="custom-input mrg-b10">
+                            <input matInput placeholder="Confirm password">
+                        </mat-form-field>
+                        <button class="gradient-btn pointer raleway-font uppercase f18 login-btn">Submit</button>
+                        <div class="social-title f14 raleway-font fcg text-center">Back to <span class="pointer hyper-link fwb">Login</span></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

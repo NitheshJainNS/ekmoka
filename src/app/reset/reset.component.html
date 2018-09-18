@@ -7,13 +7,14 @@
                       <span class="banner-title f28 robot-font fcw Lh1 fwb">Showcase your<br/> talent and be the<br/> next super star</span>
                   </div>
               </div>
-              <div class="flx-two-block forgot-content">
-                  <div class="title f32 raleway-font fcb fwb">Forgot password</div>
-                  <div class="social-title f14 raleway-font fcg">First let's find your account</div>
-                  <form #forgotForm="ngForm" class="custom-form forgot-form" (ngSubmit)="onSubmit(forgotForm.valid)">
-                      <mat-form-field class="custom-input mrg-b10">
-                          <input matInput placeholder="Mobile number">
-                      </mat-form-field>
+              <div class="flx-two-block login-content">
+                  <div class="title f32 raleway-font fcb fwb">Select how you'd choose<br/> to change password</div>
+                  <div class="social-title f14 raleway-font fcg">Verification will be sent to selected method</div>
+                  <form #loginForm="ngForm" class="custom-form login-form" (ngSubmit)="onLogin(loginForm.valid)">
+                    <mat-radio-group>
+                      <mat-radio-button class="custom-radio" value="email" checked="true">Send me email</mat-radio-button>
+                      <mat-radio-button class="custom-radio" value="mobile">Send me OTP to my mobile ending with ()</mat-radio-button>
+                    </mat-radio-group>
                       <button class="gradient-btn pointer raleway-font uppercase f18 login-btn">Submit</button>
                       <div class="social-title f14 raleway-font fcg text-center">Back to <span class="pointer hyper-link fwb">Login</span></div>
                   </form>

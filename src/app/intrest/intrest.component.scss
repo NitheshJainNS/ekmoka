@@ -1,0 +1,38 @@
+@import '../../partials/variables';
+
+.content-wrap{
+    position: relative;
+    .footer-wrap{
+        position: absolute;
+        width: 100%;
+        bottom: 50px;
+        left: 0;
+    }
+}
+.nav-wrap{
+    z-index: 10;
+}
+
+.set-btn{
+    color:$white;
+    border-radius: 15px;
+    padding: 10px;
+    background: $btn-color;
+    border: none;
+    min-width: 100px;
+    margin-right: 10px;
+}
+
+.unset-btn{
+    color:$black;
+    border-radius: 15px;
+    padding: 10px;
+    background: $default-btn;
+    border: none;
+    min-width: 100px;
+    margin-right: 10px;
+}
+
+.mrg-tb50{
+    margin: 50px 0;
+}
