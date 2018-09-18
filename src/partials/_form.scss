@@ -1,26 +1,4 @@
 @import './variables.scss';
-.form-submitted,
-.instalment-submitted {
-    .ng-invalid {
-        border-color: #B71C1C !important;
-        input {
-            border-color: #B71C1C !important;
-        }
-        &+label {
-            color: #B71C1C;
-        }
-        .mydp {
-            border-color: #B71C1C !important;
-        }
-    }
-    .ng-select {
-        &.ng-invalid {
-            .ng-control {
-                border-color: #B71C1C !important;
-            }
-        }
-    }
-}
 
 .custom-form {
     .custom-input {
@@ -43,3 +21,17 @@
         background-position: right center;
     }
 }
+
+
+/* To display a border for the input */
+.mat-input-flex.mat-form-field-flex{
+    border: none;
+ }
+ /* To remove the default underline */
+ .mat-input-underline.mat-form-field-underline {
+    background: transparent;
+ }
+ /* To remove the underline ripple */
+ .mat-input-ripple.mat-form-field-ripple{
+    background-color: transparent; 
+ }
